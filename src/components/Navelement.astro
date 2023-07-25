@@ -8,7 +8,9 @@ import SliderLink from "./SliderLink.astro";
     <a href="/">
       <img
         alt="Logo"
-        class="text-white h-16 content-[url(/logo-with-name-light.png)] dark:content-[url(/logo-with-name-dark.png)] lg:hover:opacity-80"
+        class="text-white content-[url(/logo-with-name-light.png)] dark:content-[url(/logo-with-name-dark.png)] lg:hover:opacity-80"
+        height="64"
+        width="220"
       />
     </a>
   </div>
@@ -26,12 +28,15 @@ import SliderLink from "./SliderLink.astro";
     </li>
   </ul>
   <div class="hidden md:block">
-    <SliderButton onclick="alert('To Be Implemented')">Contact Me</SliderButton>
+    <SliderButton onclick="alert('To Be Implemented')" aria-label="Contact Me">
+      Contact Me
+    </SliderButton>
   </div>
   <!-- Mobile Navigation -->
   <SliderButton
     class="md:hidden p-2"
     onclick="alert('To be made also button to be changed (just temporarily created).')"
+    aria-label="Open Menu"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
