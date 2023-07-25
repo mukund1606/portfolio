@@ -1,0 +1,50 @@
+---
+import SliderButton from "./SliderButton.astro";
+import SliderLink from "./SliderLink.astro";
+---
+
+<nav class="flex p-4 xl:px-6 items-center justify-between">
+  <div class="logo">
+    <a href="/">
+      <img
+        alt="Logo"
+        class="text-white h-16 content-[url(logo-with-name-light.png)] dark:content-[url(logo-with-name-dark.png)] lg:hover:opacity-80"
+      />
+    </a>
+  </div>
+  <!-- Desktop Navigation -->
+  <ul class="hidden md:flex md:gap-9 lg:gap-12">
+    <SliderLink href="/">Home</SliderLink>
+    <li>
+      <SliderLink href="/about">About Me</SliderLink>
+    </li>
+    <li>
+      <SliderLink href="/projects">Projects</SliderLink>
+    </li>
+    <li>
+      <SliderLink href="/blog">Blog</SliderLink>
+    </li>
+  </ul>
+  <div class="hidden md:block">
+    <SliderButton onclick="alert('To Be Implemented')">Contact Me</SliderButton>
+  </div>
+  <!-- Mobile Navigation -->
+  <SliderButton
+    class="md:hidden p-2"
+    onclick="alert('To be made also button to be changed (just temporarily created).')"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"></path>
+    </svg>
+  </SliderButton>
+</nav>

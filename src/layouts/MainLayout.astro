@@ -5,19 +5,30 @@ const { pageTitle } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link
+      rel="icon"
+      media="(prefers-color-scheme: dark)"
+      type="image/png"
+      href="/logo-dark.png"
+    />
+    <link
+      rel="icon"
+      media="(prefers-color-scheme: light)"
+      type="image/png"
+      href="/logo-light.png"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="manifest" href="manifest.json" />
     <meta
       name="theme-color"
-      media="(prefers-color-scheme: light)"
+      media="(prefers-color-scheme: dark)"
       content="#1f2122"
     />
     <meta
       name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#000000	"
+      media="(prefers-color-scheme: light)"
+      content="#ffffff"
     />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta

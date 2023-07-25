@@ -1,0 +1,14 @@
+---
+const props = Astro.props;
+import { twMerge } from "tailwind-merge";
+---
+
+<a
+  class={twMerge(
+    "after:content-[''] after:w-0 after:bg-white hover:after:w-full after:ease-linear after:duration-500 relative after:absolute after:-bottom-2 rounded-full after:right-0 after:h-[1.5px]",
+    props.class
+  )}
+  {...props}
+>
+  <slot />
+</a>
