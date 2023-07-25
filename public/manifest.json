@@ -1,0 +1,14 @@
+{
+  "name": "Mukund Mittal",
+  "short_name": "MM",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "1563x1563",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
