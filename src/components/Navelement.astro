@@ -1,16 +1,19 @@
 ---
+import MobileNav from "./MobileNav";
 import SliderButton from "./SliderButton.astro";
 import SliderLink from "./SliderLink.astro";
 ---
 
-<nav class="flex p-4 xl:px-6 items-center justify-between">
+<nav
+  class="flex p-4 xl:px-6 items-center justify-between fixed top-0 w-full backdrop-blur-md bg-white dark:bg-primary bg-opacity-70 dark:bg-opacity-70 z-50"
+>
   <div class="logo">
     <a href="/">
       <img
         alt="Logo"
         class="text-white content-[url(/logo-with-name-light.png)] dark:content-[url(/logo-with-name-dark.png)] lg:hover:opacity-80"
-        height="64"
-        width="220"
+        width="150"
+        height="75"
       />
     </a>
   </div>
@@ -30,28 +33,9 @@ import SliderLink from "./SliderLink.astro";
     </li>
   </ul>
   <div class="hidden md:block">
-    <SliderButton onclick="alert('To Be Implemented')" aria-label="Contact Me">
-      Contact Me
-    </SliderButton>
+    <SliderButton aria-label="Contact Me">Contact Me</SliderButton>
   </div>
   <!-- Mobile Navigation -->
-  <SliderButton
-    class="md:hidden p-2"
-    onclick="alert('To be made also button to be changed (just temporarily created).')"
-    aria-label="Open Menu"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="w-6 h-6"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"></path>
-    </svg>
-  </SliderButton>
+  <MobileNav client:visible />
 </nav>
+<div class="h-[76px] w-full"></div>

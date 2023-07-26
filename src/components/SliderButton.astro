@@ -4,11 +4,11 @@ import { twMerge } from "tailwind-merge";
 ---
 
 <button
+  {...props}
   class={twMerge(
     "border border-primary border-opacity-30 dark:border-white dark:border-opacity-30 px-4 py-2 relative hover:text-white dark:hover:text-primary before:-z-10 before:content-[''] dark:before:bg-white before:bg-primary before:absolute before:left-0 before:w-0 hover:before:w-full before:top-0 before:h-full before:ease-linear before:duration-500 before:transition-all ease-linear duration-500 transition-all text-lg font-semibold rounded-sm",
     props.class
   )}
-  {...props}
 >
   <slot />
 </button>
