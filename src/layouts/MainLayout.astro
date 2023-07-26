@@ -1,5 +1,7 @@
 ---
 const { pageTitle } = Astro.props;
+import Navelement from "../components/Navelement.astro";
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -19,7 +21,7 @@ const { pageTitle } = Astro.props;
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
     <meta
       name="theme-color"
       media="(prefers-color-scheme: dark)"
@@ -38,6 +40,7 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body class="bg-white dark:bg-primary w-full text-primary dark:text-white">
+    <Navelement />
     <slot />
   </body>
 </html>

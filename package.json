@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^0.19.7",
     "@astrojs/react": "^2.2.1",
     "@astrojs/sitemap": "^2.0.1",
     "@astrojs/tailwind": "^4.0.0",
@@ -17,6 +18,7 @@
     "@types/react-dom": "^18.0.6",
     "astro": "^2.9.3",
     "framer-motion": "^10.13.1",
+    "github-markdown-css": "^5.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "tailwind-merge": "^1.14.0",

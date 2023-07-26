@@ -1,0 +1,24 @@
+---
+const pageTitle =
+  "<Mukund/> Blogs | Full-Stack Developer | Python Developer | Enthusiast | Student";
+import Blogelement from "../../components/Blogelement.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+const allPosts = await Astro.glob("./*.md");
+import { sortPosts } from "../../layouts/MarkdownPostLayout.astro";
+// @ts-ignore
+const sortedPosts = allPosts.sort(sortPosts);
+---
+
+<MainLayout pageTitle={pageTitle}>
+  <div class="text-center pt-12">
+    <h1 class="dark:text-white text-primary text-6xl font-extrabold">Blogs</h1>
+    <div
+      class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-4 py-8 px-4"
+    >
+      {
+        // @ts-ignore
+        sortedPosts.map((post) => <Blogelement post={post} />)
+      }
+    </div>
+  </div>
+</MainLayout>

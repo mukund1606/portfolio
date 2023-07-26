@@ -54,12 +54,12 @@ const MobileNav = () => {
                 </a>
               </li>
               <li>
-                <a href="/about" className={sliderLinkClass}>
+                <a href="/#about" className={sliderLinkClass}>
                   About Me
                 </a>
               </li>
               <li>
-                <a href="/projects" className={sliderLinkClass}>
+                <a href="/#projects" className={sliderLinkClass}>
                   Projects
                 </a>
               </li>
