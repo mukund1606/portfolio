@@ -2,6 +2,7 @@
 import { twMerge } from "tailwind-merge";
 const { variant } = Astro.props || "blue";
 const { className } = Astro.props || "";
+const { label } = Astro.props || "";
 ---
 
 <button
@@ -12,5 +13,6 @@ const { className } = Astro.props || "";
       "bg-blueGradient text-white hover:opacity-70 duration-300 ease-linear transition-all",
     variant === "outline" &&
       "bg-tansparent border-2 border-white duration-300 ease-linear transition-all hover:bg-white hover:text-black"
-  )}><slot /></button
+  )}
+  aria-label={label}><slot /></button
 >
