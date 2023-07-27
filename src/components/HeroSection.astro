@@ -3,7 +3,7 @@ import Button from "./Button.astro";
 ---
 
 <div
-  class="items-center p-8 border-b-2 border-[#ffffff1a] grid grid-cols-2 gap-20"
+  class="items-center p-8 border-b-2 border-[#ffffff1a] grid grid-cols-2 lg:gap-20 gap-24 overflow-x-hidden"
 >
   <div
     class="flex lg:hidden items-center justify-center col-span-2 lg:col-span-1"
@@ -23,10 +23,12 @@ import Button from "./Button.astro";
         <img
           src="/arrow.png"
           alt="arrow"
-          class="absolute w-20 -top-6 -right-4 hidden lg:block animate-arrow"
+          class="absolute w-20 xl:-top-6 xl:-right-8 lg:-right-6 sm:-top-8 sm:-right-8 -top-14 -right-8 lg:block animate-arrow"
         />
       </h1>
-      <div class="space-x-8">
+      <div
+        class="flex flex-col gap-8 lg:flex-row justify-center md:justify-start"
+      >
         <Button variant="blue">Projects</Button>
         <Button variant="outline">Get in Touch</Button>
       </div>
