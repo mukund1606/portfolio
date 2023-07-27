@@ -12,7 +12,7 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="black" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta
       name="description"
@@ -20,13 +20,11 @@ import "../styles/global.css";
     />
     <title>{pageTitle}</title>
   </head>
-  <body
-    class="min-h-[100dvh] overflow-x-hidden relative"
-  >
-  <Start />
-  <div class="xl:px-40 px-4 md:px-8 space-y-8 relative">
-    <Navelement />
-    <slot />
-  </div>
+  <body class="min-h-[100dvh] overflow-x-hidden relative">
+    <!-- <Start /> -->
+    <div class="xl:px-40 px-4 md:px-8 space-y-8 relative">
+      <Navelement />
+      <slot />
+    </div>
   </body>
 </html>
