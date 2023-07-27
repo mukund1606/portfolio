@@ -1,41 +1,46 @@
 ---
-import MobileNav from "./MobileNav";
-import SliderButton from "./SliderButton.astro";
-import SliderLink from "./SliderLink.astro";
+import Button from "./Button.astro";
+import Sliderlink from "./SliderLink.astro";
 ---
 
 <nav
-  class="flex p-4 xl:px-6 items-center justify-between fixed top-0 w-full backdrop-blur-md bg-white dark:bg-primary bg-opacity-70 dark:bg-opacity-70 z-50"
+  class="flex items-center justify-between h-24 border-b-2 border-[#ffffff1a]"
 >
-  <div class="logo">
-    <a href="/">
-      <img
-        alt="Logo"
-        class="text-white content-[url(/logo-with-name-light.webp)] dark:content-[url(/logo-with-name-dark.webp)] lg:hover:opacity-80"
-        width="150"
-        height="75"
-      />
-    </a>
-  </div>
-  <!-- Desktop Navigation -->
-  <ul class="hidden md:flex md:gap-9 lg:gap-12">
+  <a
+    href="/"
+    class="flex items-center gap-4 hover:opacity-75 duration-200 transition-all ease-linear"
+  >
+    <img
+      src="/logo-dark.png"
+      alt="logo"
+      width={128}
+      height={128}
+      class="w-16 h-16"
+    />
+    <h1 class="text-5xl">Mukund</h1>
+  </a>
+  <ul class="flex gap-4 text-xl font-bold">
     <li>
-      <SliderLink href="/">Home</SliderLink>
+      <Sliderlink href="#home">Home</Sliderlink>
     </li>
     <li>
-      <SliderLink href="/#about">About Me</SliderLink>
+      <Sliderlink href="#about">About</Sliderlink>
+    </li>
+
+    <li>
+      <Sliderlink href="#services">Services</Sliderlink>
     </li>
     <li>
-      <SliderLink href="/#projects">Projects</SliderLink>
+      <Sliderlink href="#projects">Projects</Sliderlink>
     </li>
     <li>
-      <SliderLink href="/blog">Blog</SliderLink>
+      <Sliderlink href="#contact">Contact</Sliderlink>
+    </li>
+    <li>
+      <Sliderlink href="#blog">Blog</Sliderlink>
     </li>
   </ul>
-  <div class="hidden md:block">
-    <SliderButton aria-label="Contact Me">Contact Me</SliderButton>
+  <div>
+    <Button variant="blue">Download CV</Button>
   </div>
-  <!-- Mobile Navigation -->
-  <MobileNav client:visible />
 </nav>
-<div class="h-[76px] w-full"></div>

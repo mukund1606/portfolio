@@ -1,0 +1,14 @@
+---
+import { twMerge } from "tailwind-merge";
+const { variant } = Astro.props || "blue";
+---
+
+<button
+  class={twMerge(
+    "font-bold px-6 py-2 rounded-md",
+    variant === "blue" &&
+      "bg-blueGradient text-white hover:opacity-70 duration-300 ease-linear transition-all",
+    variant === "outline" &&
+      "bg-tansparent border-2 border-white duration-300 ease-linear transition-all hover:bg-white hover:text-black"
+  )}><slot /></button
+>

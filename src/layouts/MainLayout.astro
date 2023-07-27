@@ -1,6 +1,7 @@
 ---
 const { pageTitle } = Astro.props;
 import Navelement from "../components/Navelement.astro";
+import Start from "../components/Start.astro";
 import "../styles/global.css";
 ---
 
@@ -39,7 +40,8 @@ import "../styles/global.css";
     />
     <title>{pageTitle}</title>
   </head>
-  <body class="bg-white dark:bg-primary w-full text-primary dark:text-white">
+  <body class="xl:px-40 px-4 md:px-8 space-y-8">
+    <Start />
     <Navelement />
     <slot />
   </body>

@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .markdown-body {
     color-scheme: dark;
     --color-prettylights-syntax-comment: #8b949e;
@@ -1105,4 +1105,4 @@
 
 .markdown-body ::-webkit-calendar-picker-indicator {
   filter: invert(50%);
-}
+} */

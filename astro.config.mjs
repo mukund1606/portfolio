@@ -7,11 +7,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://mukund.page",
-  integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
-    sitemap(),
-    react(),
-  ],
+  integrations: [tailwind(), sitemap(), react()],
 });

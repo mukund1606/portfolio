@@ -1,5 +1,129 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --primary-color: #000;
+  --secondary-color: #747474;
+  --text-color: #fff;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    var(--secondary-color) 0.75px,
+    transparent 0
+  );
+  background-size: 25px 25px;
+  color: var(--text-color);
+  font-family: "Port Lligat Slab", serif;
+}
+
+@keyframes arrow {
+  0%,
+  100% {
+    transform: rotate(-10deg) translateY(-10px);
+  }
+  50% {
+    transform: rotate(-50deg) translateY(-20px);
+  }
+}
+
+#logo {
+  animation: fill 0.8s ease forwards 2.7s;
+}
+
+#logo path:nth-child(1) {
+  stroke: var(--text-color);
+  stroke-dasharray: 1129.6129150390625;
+  stroke-dashoffset: 1129.6129150390625;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2) {
+  stroke: var(--text-color);
+  stroke-dasharray: 673.5794677734375;
+  stroke-dashoffset: 673.5794677734375;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3) {
+  stroke: var(--text-color);
+  stroke-dasharray: 814.8848876953125;
+  stroke-dashoffset: 814.8848876953125;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(4) {
+  stroke: var(--text-color);
+  stroke-dasharray: 673.5791625976562;
+  stroke-dashoffset: 673.5791625976562;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(5) {
+  stroke: var(--text-color);
+  stroke-dasharray: 673.5772705078125;
+  stroke-dashoffset: 673.5772705078125;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(6) {
+  stroke: var(--text-color);
+  stroke-dasharray: 835.9981079101562;
+  stroke-dashoffset: 835.9981079101562;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: var(--text-color);
+  }
+}
+
+.upperPart {
+  animation: upperPart 1s ease forwards 4s;
+}
+
+.lowerPart {
+  animation: lowerPart 1s ease forwards 4s;
+}
+
+@keyframes upperPart {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    display: none;
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes lowerPart {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    display: none;
+    transform: translateY(100vh);
+  }
+}
+
+.mainStart {
+  animation: mainStart 1s ease forwards 4.1s;
+}
+
+@keyframes mainStart {
+  from {
+    display: "block";
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
