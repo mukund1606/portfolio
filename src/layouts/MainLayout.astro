@@ -8,31 +8,11 @@ import "../styles/global.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link
-      rel="icon"
-      media="(prefers-color-scheme: dark)"
-      type="image/png"
-      href="/logo-dark.png"
-    />
-    <link
-      rel="icon"
-      media="(prefers-color-scheme: light)"
-      type="image/png"
-      href="/logo-light.png"
-    />
+    <link rel="icon" type="image/png" href="/logo-dark.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="manifest" href="/manifest.json" />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#1f2122"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="#ffffff"
-    />
+    <meta name="theme-color" content="#000000" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta
       name="description"
@@ -41,10 +21,12 @@ import "../styles/global.css";
     <title>{pageTitle}</title>
   </head>
   <body
-    class="xl:px-40 px-4 md:px-8 space-y-8 min-h-[100dvh] overflow-x-hidden"
+    class="min-h-[100dvh] overflow-x-hidden relative"
   >
-    <!-- <Start /> -->
+  <Start />
+  <div class="xl:px-40 px-4 md:px-8 space-y-8 relative">
     <Navelement />
     <slot />
+  </div>
   </body>
 </html>

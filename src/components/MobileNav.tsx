@@ -62,25 +62,37 @@ export default function MobileNav() {
             </div>
             <ul className="gap-8 text-xl flex flex-col text-center font-bold ">
               <li>
-                <Sliderlink href="#home">Home</Sliderlink>
+                <Sliderlink href="#home" onClick={() => setOpen(false)}>
+                  Home
+                </Sliderlink>
               </li>
               <li>
-                <Sliderlink href="#about">About</Sliderlink>
+                <Sliderlink href="#about" onClick={() => setOpen(false)}>
+                  About
+                </Sliderlink>
               </li>
 
               <li>
-                <Sliderlink href="#services">Services</Sliderlink>
+                <Sliderlink href="#services" onClick={() => setOpen(false)}>
+                  Services
+                </Sliderlink>
               </li>
               <li>
-                <Sliderlink href="#projects">Projects</Sliderlink>
+                <Sliderlink href="#projects" onClick={() => setOpen(false)}>
+                  Projects
+                </Sliderlink>
               </li>
               <li>
-                <Sliderlink href="#contact">Contact</Sliderlink>
+                <Sliderlink href="#contact" onClick={() => setOpen(false)}>
+                  Contact
+                </Sliderlink>
               </li>
               <li>
-                <Sliderlink href="#blog">Blog</Sliderlink>
+                <Sliderlink href="#blog" onClick={() => setOpen(false)}>
+                  Blog
+                </Sliderlink>
               </li>
-              <li>
+              <li onClick={() => setOpen(false)}>
                 <Button aria-label="cv-button" variant="blue">
                   Download CV
                 </Button>

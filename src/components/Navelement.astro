@@ -5,7 +5,8 @@ import Sliderlink from "./SliderLink.astro";
 ---
 
 <nav
-  class="flex items-center justify-between h-24 border-b-2 border-[#ffffff1a]"
+id="navbar"
+  class="flex xl:px-40 px-4 md:px-8 backdrop-blur-md z-30 fixed w-full top-0 left-0 items-center justify-between h-24 border-b-2 border-[#ffffff1a]"
 >
   <a
     href="/"
@@ -48,3 +49,5 @@ import Sliderlink from "./SliderLink.astro";
     <MobileNav client:load />
   </div>
 </nav>
+
+<div class="h-16"></div>
