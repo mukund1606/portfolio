@@ -3,20 +3,16 @@ import AnimationName from "./AnimationName.astro";
 ---
 
 <div
-  class="w-full bg-black h-screen fixed inset-0 z-40 overflow-hidden mainStart"
+  class="w-full bg-black h-[100dvh] min-h-[100dvh] fixed inset-0 z-40 mainStart px-2"
 >
   <div
-    class="relative w-full h-[50vh] flex justify-center overflow-hidden upperPart"
+    class="relative w-full h-[50dvh] flex justify-center overflow-hidden upperPart"
   >
-    <div class="absolute -bottom-[18.6%]">
-      <AnimationName />
-    </div>
+    <AnimationName class="absolute -bottom-[101px] max-w-[80%]" />
   </div>
   <div
-    class="relative w-full h-[50vh] flex justify-center overflow-hidden lowerPart"
+    class="relative w-full h-[50dvh] flex justify-center overflow-hidden lowerPart"
   >
-    <div class="absolute -top-[25%]">
-      <AnimationName />
-    </div>
+    <AnimationName class="absolute -top-[108px] max-w-[80%]" />
   </div>
 </div>

@@ -5,8 +5,19 @@ import Button from "./Button.astro";
 <div
   class="items-center p-8 border-b-2 border-[#ffffff1a] grid grid-cols-2 gap-20"
 >
-  <div class="w-full col-span-1">
-    <div class="max-w-[456px] space-y-6">
+  <div
+    class="flex lg:hidden items-center justify-center col-span-2 lg:col-span-1"
+  >
+    <div
+      class="w-full bg-white aspect-square rounded-br-lg rounded-tl-lg rounded-bl-[7.5rem] rounded-tr-[7.5rem] max-w-[456px]"
+    >
+      Image
+    </div>
+  </div>
+  <div
+    class="w-full flex justify-center lg:justify-start col-span-2 lg:col-span-1"
+  >
+    <div class="max-w-[456px] space-y-6 text-center lg:text-left">
       <h1 style="text-wrap: balance" class="text-5xl relative">
         Hello, I'm Mukund Mittal a Full Stack Web/Python Developer
         <img
@@ -21,7 +32,9 @@ import Button from "./Button.astro";
       </div>
     </div>
   </div>
-  <div class="flex items-center justify-center col-span-1">
+  <div
+    class="lg:flex items-center hidden justify-center col-span-2 lg:col-span-1"
+  >
     <div
       class="w-full bg-white aspect-square rounded-br-lg rounded-tl-lg rounded-bl-[7.5rem] rounded-tr-[7.5rem] max-w-[456px]"
     >

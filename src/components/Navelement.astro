@@ -19,7 +19,7 @@ import Sliderlink from "./SliderLink.astro";
     />
     <h1 class="text-5xl">Mukund</h1>
   </a>
-  <ul class="flex gap-4 text-xl font-bold">
+  <ul class="gap-4 text-xl font-bold hidden lg:flex">
     <li>
       <Sliderlink href="#home">Home</Sliderlink>
     </li>
@@ -40,7 +40,25 @@ import Sliderlink from "./SliderLink.astro";
       <Sliderlink href="#blog">Blog</Sliderlink>
     </li>
   </ul>
-  <div>
+  <div class="hidden lg:block">
     <Button variant="blue">Download CV</Button>
+  </div>
+  <div class="lg:hidden">
+    <Button variant="blue" className="p-4">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+        ></path>
+      </svg>
+    </Button>
   </div>
 </nav>
