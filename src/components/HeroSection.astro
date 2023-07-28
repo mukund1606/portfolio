@@ -1,18 +1,19 @@
 ---
-import Button from "./Button.astro";
+import { Button } from "./Button.tsx";
+import CanvasElement from "./HeroImageAnimation";
 ---
 
 <div
   id="home"
   class="items-center p-8 border-b-2 border-[#ffffff1a] grid grid-cols-2 lg:gap-20 gap-24 overflow-x-hidden"
 >
-  <div
-    class="flex lg:hidden items-center justify-center col-span-2 lg:col-span-1"
-  >
+  <div class="flex items-center justify-center col-span-2 lg:col-span-1">
     <div
-      class="w-full bg-white aspect-square rounded-br-lg rounded-tl-lg rounded-bl-[7.5rem] rounded-tr-[7.5rem] max-w-[456px]"
+      class="w-full flex items-end justify-center overflow-hidden relative aspect-square max-w-[456px]"
     >
-      Image
+      <div class="absolute w-[120%] aspect-square">
+        <CanvasElement client:only />
+      </div>
     </div>
   </div>
   <div
@@ -30,17 +31,14 @@ import Button from "./Button.astro";
       <div
         class="flex flex-col gap-8 lg:flex-row justify-center md:justify-start"
       >
-        <Button variant="blue">Projects</Button>
-        <Button variant="outline">Get in Touch</Button>
+        <a href="#projects">
+          <Button variant="blue">Projects</Button>
+        </a>
+        <a href="#contact">
+          <Button variant="outline">Get in Touch</Button>
+        </a>
       </div>
     </div>
   </div>
-  <div
-    class="lg:flex items-center hidden justify-center col-span-2 lg:col-span-1"
-  >
-    <div
-      class="w-full bg-white aspect-square rounded-br-lg rounded-tl-lg rounded-bl-[7.5rem] rounded-tr-[7.5rem] max-w-[456px]"
-    >
-    </div>
-  </div>
 </div>
+<div></div>

@@ -5,8 +5,9 @@ import { cn } from "../lib/utils";
 const buttonVariants = cva("font-bold text-white px-6 py-2 rounded-md", {
   variants: {
     variant: {
-      blue: "bg-blueGradient",
-      outline: "bg-tansparent border-2 border-white",
+      blue: "bg-blueGradient text-white hover:opacity-70 duration-300 ease-linear transition-all",
+      outline:
+        "bg-tansparent border-2 border-white duration-300 ease-linear transition-all hover:bg-white hover:text-black",
     },
   },
   defaultVariants: {
