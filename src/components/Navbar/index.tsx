@@ -5,7 +5,6 @@ import {
   HiHome,
   HiUser,
   HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
   HiEnvelope,
   HiMiniRectangleStack,
 } from "react-icons/hi2";
@@ -18,7 +17,7 @@ import { cn } from "@/lib/utils";
 const links = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
-  { name: "services", path: "/services", icon: <HiRectangleGroup /> },
+  { name: "tech stack", path: "/tech-stack", icon: <HiRectangleGroup /> },
   { name: "projects", path: "/projects", icon: <HiMiniRectangleStack /> },
   {
     name: "contact",

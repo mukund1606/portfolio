@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1f2122",
-        blueGradient: `linear-gradient(114deg, #1D5D9B 0%, #75C2F6 100%)`,
       },
       backgroundImage: {
         blueGradient: `linear-gradient(114deg, #1D5D9B 0%, #75C2F6 100%)`,

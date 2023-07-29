@@ -29,7 +29,8 @@ body,
     var(--secondary-color) 1px,
     transparent 0
   );
-  background-size: 25px 25px;
+  background-image: url("/stars.jpg");
+  /* background-size: 25px 25px; */
 }
 
 #navbar {
