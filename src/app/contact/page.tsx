@@ -1,12 +1,6 @@
 import Image from "next/image";
-import {
-  FaTwitter,
-  FaDribbble,
-  FaFacebookF,
-  FaInstagram,
-  FaGithub,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
 import Link from "next/link";
 import "@/styles/links.css";
 
@@ -28,12 +22,12 @@ const ContactPage = () => {
             )}
             priority
           />
-          <div className="flex flex-col items-center w-full h-full overflow-y-scroll text-center scrollbar-thumb-[#75c2f6]/20 scrollbar-thumb-rounded-full scrollbar-thin scrollbar-track-transparent md:p-12 p-16 gap-5">
+          <div className="flex flex-col items-center w-full h-full overflow-y-scroll text-center scrollbar-thumb-[#75c2f6]/20 scrollbar-thumb-rounded-full scrollbar-thin scrollbar-track-transparent md:p-12 p-4 lg:p-16 gap-5">
             <h1 className="w-full text-5xl font-bold text-transparent bg-yellowGradient bg-clip-text">
               Contact Me
             </h1>
-            <div className="flex justify-center w-full h-20 gap-5 my-auto">
-              <div className="social-icons">
+            <div className="flex justify-center w-full gap-5 p-4 my-auto">
+              <div className="flex flex-wrap items-center justify-center w-full social-icons">
                 <Link
                   className="social-icon twitter"
                   href="https://twitter.com/Mukund166"
@@ -57,6 +51,12 @@ const ContactPage = () => {
                   href="https://github.com/mukund1606"
                 >
                   <FaGithub />
+                </Link>
+                <Link
+                  className="social-icon linktree"
+                  href="https://linktr.ee/mukund16"
+                >
+                  <SiLinktree />
                 </Link>
               </div>
             </div>

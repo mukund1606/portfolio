@@ -3,11 +3,6 @@
   --trans-property: all 0.3s ease;
 }
 
-.social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .social-icon {
   display: flex;
@@ -58,6 +53,9 @@
 }
 .social-icon.linkedin:after {
   background-color: #0a66c2;
+}
+.social-icon.linktree:after {
+  background-color: #43e660;
 }
 
 .social-icon:hover {
