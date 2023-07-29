@@ -18,17 +18,17 @@ const links = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
   { name: "tech stack", path: "/tech-stack", icon: <HiRectangleGroup /> },
-  { name: "projects", path: "/projects", icon: <HiMiniRectangleStack /> },
+  // { name: "projects", path: "/projects", icon: <HiMiniRectangleStack /> },
   {
     name: "contact",
     path: "/contact",
     icon: <HiEnvelope />,
   },
-  {
-    name: "blogs",
-    path: "/blogs",
-    icon: <GiNotebook />,
-  },
+  // {
+  //   name: "blogs",
+  //   path: "/blogs",
+  //   icon: <GiNotebook />,
+  // },
 ];
 
 const Navbar = () => {
