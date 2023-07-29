@@ -1,4 +1,3 @@
-import { HeroCanvas } from "@/components/HeroCanvas";
 import { TechCanvas } from "@/components/TechCanvas";
 
 const TechStackPage = () => {
@@ -8,7 +7,7 @@ const TechStackPage = () => {
         <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-blueGradient h-[20%]">
           Tech Stack
         </h1>
-        <div className="overflow-visible flex items-end justify-center relative aspect-video lg:max-w-[80%] w-[200%] max-h-[80%]">
+        <div className="overflow-visible flex items-center justify-center relative aspect-video lg:max-w-[80%] w-[200%] max-h-[80%]">
           <TechCanvas />
         </div>
       </div>
