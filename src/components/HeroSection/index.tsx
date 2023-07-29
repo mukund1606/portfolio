@@ -3,8 +3,10 @@ import Image from "next/image";
 
 // Utils
 import { cn } from "@/lib/utils";
-import { HeroCanvas } from "../HeroCanvas";
-import { RoundButton } from "../RoundButton";
+
+// Components
+import { HeroCanvas } from "@/components/HeroCanvas";
+import { RoundButton } from "@/components/RoundButton";
 
 interface HeroSectionProps extends React.HTMLAttributes<HTMLElement> {}
 

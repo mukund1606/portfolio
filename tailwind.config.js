@@ -16,6 +16,7 @@ module.exports = {
         yellowGradient: `linear-gradient(50deg, #FBEEAC 0%, #F4D160 100%)`,
         circleStar: 'url("/circle-star.svg")',
         galaxy: 'url("/galaxy.jpg")',
+        stars: 'url("/stars.jpg")',
       },
       fontFamily: {
         sans: ["Port Lligat Slab", "sans-serif"],

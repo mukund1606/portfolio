@@ -25,6 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <div className="top-0 w-full text-center bg-white/20">
+          This site is under construction. Will be live soon.
+        </div>
         <Navbar />
         <StartAnimation />
         {children}

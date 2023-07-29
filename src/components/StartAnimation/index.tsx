@@ -1,4 +1,4 @@
-import AnimateName from "../AnimateName";
+import AnimateName from "@/components/AnimateName";
 
 const StartAnimation = () => {
   return (
