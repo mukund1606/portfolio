@@ -15,6 +15,7 @@ module.exports = {
         grayGradient: `linear-gradient(114deg, #919191 0%, #484848 100%)`,
         yellowGradient: `linear-gradient(50deg, #FBEEAC 0%, #F4D160 100%)`,
         circleStar: 'url("/circle-star.svg")',
+        galaxy: 'url("/galaxy.jpg")',
       },
       fontFamily: {
         sans: ["Port Lligat Slab", "sans-serif"],
@@ -25,5 +26,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };
