@@ -1,6 +1,8 @@
-import { AnchorHTMLAttributes, FC, forwardRef, Children } from "react";
+import { AnchorHTMLAttributes, FC, forwardRef } from "react";
 import { VariantProps, cva } from "class-variance-authority";
-import { cn } from "../lib/utils";
+
+// Utils
+import { cn } from "@/lib/utils";
 
 const linkVariants = cva("font-bold text-white px-6 py-2 rounded-md", {
   variants: {
@@ -18,7 +20,7 @@ interface LinkProps
   extends AnchorHTMLAttributes<HTMLAnchorElement>,
     VariantProps<typeof linkVariants> {}
 
-const Sliderlink: FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps>(
+const SliderLink: FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps>(
   ({ className, variant, ...props }, ref) => {
     return (
       <a
@@ -30,6 +32,6 @@ const Sliderlink: FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps>(
   }
 );
 
-Sliderlink.displayName = "Link";
+SliderLink.displayName = "Link";
 
-export { Sliderlink, linkVariants };
+export { SliderLink };

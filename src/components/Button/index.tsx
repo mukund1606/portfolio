@@ -1,6 +1,8 @@
 import { ButtonHTMLAttributes, FC, forwardRef } from "react";
 import { VariantProps, cva } from "class-variance-authority";
-import { cn } from "../lib/utils";
+
+// Utils
+import { cn } from "@/lib/utils";
 
 const buttonVariants = cva("font-bold text-white px-6 py-2 rounded-md", {
   variants: {

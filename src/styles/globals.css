@@ -1,24 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary-color: #000;
   --secondary-color: #747474;
   --text-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Port Lligat Slab", serif;
+}
+
 body,
 #mobile-nav {
+  color: var(--text-color);
   width: 100%;
   min-height: 100dvh;
   background-color: var(--primary-color);
   background-image: radial-gradient(
     circle at 1px 1px,
-    var(--secondary-color) 0.75px,
+    var(--secondary-color) 1px,
     transparent 0
   );
   background-size: 25px 25px;
-  color: var(--text-color);
-  font-family: "Port Lligat Slab", serif;
 }
 
 #navbar {
