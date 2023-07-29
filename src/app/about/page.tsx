@@ -18,7 +18,7 @@ const AboutPage = () => {
   }, []);
   return (
     <>
-      <div className="flex justify-center w-full h-screen p-4 pb-32 overflow-hidden xl:p-20 xl:pb-0">
+      <div className="flex justify-center w-full h-[calc(100dvh-1.5rem)] p-4 pb-32 overflow-hidden xl:p-20 xl:pb-0">
         <div
           id="tilt-element"
           className="xl:w-[80%] relative w-full shadow-md rounded-xl xl:max-h-[80dvh] shadow-white/20"

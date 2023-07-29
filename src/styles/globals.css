@@ -144,10 +144,13 @@ body,
   from {
     display: "block";
     opacity: 1;
+    height: 100%;
   }
   to {
-    opacity: 0;
     display: none;
+    opacity: 0;
+    height: 0;
+    z-index: -999;
   }
 }
 

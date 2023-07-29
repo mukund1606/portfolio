@@ -3,7 +3,7 @@ import { TechCanvas } from "@/components/TechCanvas";
 const TechStackPage = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full min-h-screen gap-5 mb-20 overflow-hidden overflow-x-hidden xl:mb-0">
+      <div className="flex flex-col items-center justify-center w-full min-h-[calc(100dvh-2rem)] gap-5 mb-20 overflow-hidden overflow-x-hidden xl:mb-0">
         <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-blueGradient h-[20%]">
           Tech Stack
         </h1>
