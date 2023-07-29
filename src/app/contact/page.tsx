@@ -54,7 +54,7 @@ const ContactPage = () => {
                 </Link>
                 <Link
                   className="social-icon linktree"
-                  href="https://linktr.ee/mukund16"
+                  href="https://linktr.ee/mukund1606"
                 >
                   <SiLinktree />
                 </Link>
