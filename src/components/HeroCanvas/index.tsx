@@ -21,6 +21,7 @@ const HeroCanvasMesh = () => {
 };
 
 const HeroCanvas = ({ className, ...props }: { className?: string }) => {
+  const isMobile = window.innerWidth < 768;
   useGLTF.preload("./forest/scene.gltf");
   return (
     <Suspense fallback={<SuspenseComponent className={className} />}>
@@ -38,6 +39,7 @@ const HeroCanvas = ({ className, ...props }: { className?: string }) => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
           autoRotate
+          autoRotateSpeed={isMobile ? 4 : 2}
         />
         <HeroCanvasMesh />
         <Preload all />

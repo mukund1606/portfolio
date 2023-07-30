@@ -26,6 +26,7 @@ const TechCanvasMesh = () => {
 };
 
 const TechCanvas = ({ className, ...props }: { className?: string }) => {
+  const isMobile = window.innerWidth < 768;
   return (
     useGLTF.preload("./tech-stack/scene.gltf"),
     (
@@ -44,7 +45,7 @@ const TechCanvas = ({ className, ...props }: { className?: string }) => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
             autoRotate
-            autoRotateSpeed={1}
+            autoRotateSpeed={isMobile ? 3 : 1}
           />
           <TechCanvasMesh />
           <Preload all />
