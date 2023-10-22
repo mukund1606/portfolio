@@ -35,8 +35,11 @@ function NavBar() {
           opacity: 1,
         },
         hidden: {
-          opacity: 0,
+          opacity: 0.1,
         },
+      }}
+      whileHover={{
+        opacity: 1,
       }}
       initial="visible"
       animate={hidden ? "hidden" : "visible"}

@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { Providers } from "@/app/providers";
 import NavBar from "@/components/Navbar";
 import StartAnimation from "@/components/StartAnimation";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export const metadata = {
   title:
@@ -68,7 +69,7 @@ export default function RootLayout({
         <Providers>
           <StartAnimation />
           <NavBar />
-          <div className="pb-[67px] lg:pb-0">{children}</div>
+          {children}
         </Providers>
       </body>
     </html>

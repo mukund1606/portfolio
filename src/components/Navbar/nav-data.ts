@@ -12,8 +12,8 @@ export const navData = [
     icon: User,
   },
   {
-    name: "Tech Stack",
-    href: "/techstack",
+    name: "Skills",
+    href: "/skills",
     icon: Laptop,
   },
   {

@@ -43,7 +43,8 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/app/page.tsx"
   ],
   "exclude": ["node_modules"]
 }

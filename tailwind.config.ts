@@ -21,15 +21,14 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        fredoka: ["Fredoka", "sans-serif"],
-        abeezee: ["ABeeZee", "sans-serif"],
-        sans: ["ABeeZee", "sans-serif"],
+        serif: ["Port Lligat Slab", "serif"],
       },
       backgroundImage: {
         blueGradient: `linear-gradient(114deg, #1D5D9B 0%, #75C2F6 100%)`,
         grayGradient: `linear-gradient(114deg, #919191 0%, #484848 100%)`,
         yellowGradient: `linear-gradient(50deg, #FBEEAC 0%, #F4D160 100%)`,
         stars: 'url("/assets/stars.jpg")',
+        circleStar: 'url("/assets/circle-star.svg")',
       },
       colors: {
         border: "hsl(var(--border))",
@@ -84,6 +83,8 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        arrow: "arrow 2s ease-in-out infinite",
+        "spin-slow": "spin 6s linear infinite",
       },
     },
   },
