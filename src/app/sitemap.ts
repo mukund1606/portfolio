@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: "https://mukund.page/tech-stack",
+      url: "https://mukund.page/techstack",
       lastModified: new Date(),
     },
     {
@@ -24,10 +24,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://mukund.page/contact",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://mukund.page/blog",
       lastModified: new Date(),
     },
   ];
