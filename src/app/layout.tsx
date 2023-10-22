@@ -64,7 +64,7 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
       </head>
-      <body className="min-h-screen w-full">
+      <body className="min-h-[100dvh] w-full">
         <Providers>
           <StartAnimation />
           <NavBar />

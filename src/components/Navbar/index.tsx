@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
+import { Tooltip } from "@nextui-org/react";
+
 import { cn } from "@/lib/utils";
 
 import { navData } from "./nav-data";
@@ -52,15 +54,17 @@ function NavBar() {
         <ul className="flex w-full flex-row justify-evenly lg:flex-col lg:gap-4">
           {navData.map((item, index) => (
             <li key={index}>
-              <Link
-                href={item.href}
-                className={cn(
-                  "inline-flex w-fit items-center text-medium text-gray-500 no-underline outline-none duration-700 ease-in-out hover:rotate-[360deg] hover:text-gray-900 hover:opacity-80",
-                  pathname === item.href && "text-gray-950",
-                )}
-              >
-                {<item.icon />}
-              </Link>
+              <Tooltip content={item.name} placement="top">
+                <Link
+                  href={item.href}
+                  className={cn(
+                    "inline-flex w-fit items-center text-medium text-gray-500 no-underline outline-none duration-700 ease-in-out hover:text-gray-900 hover:opacity-80 lg:hover:rotate-[360deg]",
+                    pathname === item.href && "text-gray-950",
+                  )}
+                >
+                  {<item.icon />}
+                </Link>
+              </Tooltip>
             </li>
           ))}
         </ul>
