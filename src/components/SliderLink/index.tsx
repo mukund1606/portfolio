@@ -1,5 +1,5 @@
-import { AnchorHTMLAttributes, FC, forwardRef } from "react";
-import { VariantProps, cva } from "class-variance-authority";
+import { type AnchorHTMLAttributes, type FC, forwardRef } from "react";
+import { type VariantProps, cva } from "class-variance-authority";
 
 // Utils
 import { cn } from "@/lib/utils";
@@ -29,7 +29,7 @@ const SliderLink: FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps>(
         ref={ref}
       ></a>
     );
-  }
+  },
 );
 
 SliderLink.displayName = "Link";

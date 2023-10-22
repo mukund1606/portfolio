@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes, FC, forwardRef } from "react";
-import { VariantProps, cva } from "class-variance-authority";
+import { type ButtonHTMLAttributes, type FC, forwardRef } from "react";
+import { type VariantProps, cva } from "class-variance-authority";
 
 // Utils
 import { cn } from "@/lib/utils";
@@ -30,7 +30,7 @@ const Button: FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
       />
     );
-  }
+  },
 );
 
 Button.displayName = "Button";

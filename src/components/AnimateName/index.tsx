@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { type FC } from "react";
 
-interface AnimateNameProps extends React.SVGProps<SVGSVGElement> {}
-
-const AnimateName: FC<AnimateNameProps> = (props: AnimateNameProps) => {
+const AnimateName: FC<React.SVGProps<SVGSVGElement>> = (
+  props: React.SVGProps<SVGSVGElement>,
+) => {
   return (
     <svg
       id="logo"

@@ -1,11 +1,10 @@
 import "@/styles/globals.css";
-import { Metadata } from "next";
 
 // Components
 import StartAnimation from "@/components/StartAnimation";
 import Navbar from "@/components/Navbar";
 
-export const metadata: Metadata = {
+export const metadata = {
   title:
     "<Mukund/> Portfolio | Full-Stack Developer | Python Developer | Enthusiast | Student",
   description:

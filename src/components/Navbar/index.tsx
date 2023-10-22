@@ -8,7 +8,6 @@ import {
   HiEnvelope,
   HiMiniRectangleStack,
 } from "react-icons/hi2";
-import { GiNotebook } from "react-icons/gi";
 import { motion } from "framer-motion";
 
 // Utils
@@ -35,8 +34,8 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <>
-      <nav className="fixed bottom-0 flex flex-col items-center xl:justify-center gap-y-4 h-max mt-0 xl:right-[2%] z-40 xl:top-0 w-full xl:w-16 xl:max-w-md xl:h-screen">
-        <div className="flex items-center justify-between w-full h-20 px-4 py-8 text-3xl xl:flex-col xl:justify-center gap-y-10 md:px-40 xl:px-0 bg-[#ffffff] bg-opacity-5 backdrop-blur-sm xl:h-max xl:text-xl xl:rounded-full">
+      <nav className="fixed bottom-0 z-40 mt-0 flex h-max w-full flex-col items-center gap-y-4 xl:right-[2%] xl:top-0 xl:h-screen xl:w-16 xl:max-w-md xl:justify-center">
+        <div className="flex h-20 w-full items-center justify-between gap-y-10 bg-[#ffffff] bg-opacity-5 px-4 py-8 text-3xl backdrop-blur-sm md:px-40 xl:h-max xl:flex-col xl:justify-center xl:rounded-full xl:px-0 xl:text-xl">
           {links.map((link) => {
             return (
               <motion.div
@@ -53,7 +52,7 @@ const Navbar = () => {
                   href={link.path}
                   className={cn(
                     pathname === link.path && "text-[#75c2f6]",
-                    "flex items-center hover:scale-125 transition-all duration-200 ease-linear "
+                    "flex items-center transition-all duration-200 ease-linear hover:scale-125 ",
                   )}
                   aria-label={link.name}
                 >

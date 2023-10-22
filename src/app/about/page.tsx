@@ -13,26 +13,27 @@ const AboutPage = () => {
       .then((res) => res.text())
       .then((res) => {
         setData(res);
-      });
+      })
+      .catch((err) => console.log(err));
   }, []);
   return (
     <>
-      <div className="flex justify-center w-full h-[calc(100dvh-1.5rem)] p-4 pb-32 overflow-hidden xl:p-20 xl:pb-0">
-        <div className="xl:w-[80%] relative w-full shadow-md rounded-xl xl:max-h-[80dvh] shadow-white/20">
+      <div className="flex h-[calc(100dvh-1.5rem)] w-full justify-center overflow-hidden p-4 pb-32 xl:p-20 xl:pb-0">
+        <div className="relative w-full rounded-xl shadow-md shadow-white/20 xl:max-h-[80dvh] xl:w-[80%]">
           <Image
             src="/galaxy.jpg"
             alt="galaxy"
             width={1024}
             height={768}
-            className={cn("w-full h-full rounded-xl absolute opacity-30 -z-10")}
+            className={cn("absolute -z-10 h-full w-full rounded-xl opacity-30")}
             priority
           />
-          <div className="flex flex-col items-center w-full h-full p-4 overflow-y-scroll text-center scrollbar-thumb-[#75c2f6]/20 scrollbar-thumb-rounded-full scrollbar-thin scrollbar-track-transparent md:p-12 xl:p-16 gap-5">
-            <h1 className="w-full text-5xl font-bold text-transparent bg-yellowGradient bg-clip-text">
+          <div className="flex h-full w-full flex-col items-center gap-5 overflow-y-scroll p-4 text-center scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#75c2f6]/20 scrollbar-thumb-rounded-full md:p-12 xl:p-16">
+            <h1 className="w-full bg-yellowGradient bg-clip-text text-5xl font-bold text-transparent">
               About Me
             </h1>
-            <div className="flex justify-center w-full my-auto">
-              <Markdown className="w-full space-y-5 text-lg prose prose-invert">
+            <div className="my-auto flex w-full justify-center">
+              <Markdown className="prose prose-invert w-full space-y-5 text-lg">
                 {data}
               </Markdown>
             </div>
