@@ -25,6 +25,12 @@ module.exports = {
         abeezee: ["ABeeZee", "sans-serif"],
         sans: ["ABeeZee", "sans-serif"],
       },
+      backgroundImage: {
+        blueGradient: `linear-gradient(114deg, #1D5D9B 0%, #75C2F6 100%)`,
+        grayGradient: `linear-gradient(114deg, #919191 0%, #484848 100%)`,
+        yellowGradient: `linear-gradient(50deg, #FBEEAC 0%, #F4D160 100%)`,
+        stars: 'url("/assets/stars.jpg")',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

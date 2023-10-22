@@ -40,7 +40,7 @@ function NavBar() {
         stiffness: 500,
       }}
     >
-      <div className="flex w-full flex-row items-center justify-between gap-4 bg-gray-50 p-4 text-black lg:flex-col lg:gap-8 lg:rounded-full lg:py-6">
+      <div className="flex w-full flex-row items-center justify-between gap-4 bg-gray-300 p-4 text-black lg:flex-col lg:gap-8 lg:rounded-full lg:py-6">
         <div className="ml-4 flex w-full flex-col lg:hidden">
           <span className="text-sm">Mukund Mittal</span>
           <span className="text-xs text-muted">Full-Stack Developer</span>
@@ -51,8 +51,8 @@ function NavBar() {
               <Link
                 href={item.href}
                 className={cn(
-                  "w-fit text-gray-500 transition-transform duration-1000 ease-in-out hover:rotate-[360deg]",
-                  pathname === item.href && "text-gray-900",
+                  "w-fit text-gray-500 transition-all hover:rotate-[360deg] hover:text-gray-900",
+                  pathname === item.href && "text-gray-950",
                 )}
               >
                 {<item.icon />}

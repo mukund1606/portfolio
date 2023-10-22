@@ -58,7 +58,13 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-repeat text-foreground;
+    background-size: 2.75rem 2.75rem;
+    background-image: radial-gradient(
+      circle at center,
+      #1f2937 1px,
+      transparent 0
+    );
   }
   html {
     @apply scroll-smooth;
