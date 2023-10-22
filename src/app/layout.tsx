@@ -1,7 +1,8 @@
 import "@/styles/globals.css";
 
 import { Providers } from "@/app/providers";
-import NavBar from "@/components/navbar";
+import NavBar from "@/components/Navbar";
+import StartAnimation from "@/components/StartAnimation";
 
 export const metadata = {
   title:
@@ -65,6 +66,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen w-full">
         <Providers>
+          <StartAnimation />
           <NavBar />
           <div className="pb-[67px] lg:pb-0">{children}</div>
         </Providers>
