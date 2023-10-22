@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="grid h-screen items-center justify-center gap-8 p-8 py-32 sm:p-16 sm:py-32 md:py-32 lg:grid-cols-2 lg:gap-20 lg:p-24 lg:py-32 xl:gap-64 xl:p-32"
+      className="grid min-h-[100dvh] items-center justify-center gap-8 p-8 py-16 pb-[calc(67px+4rem)] sm:p-16 sm:py-16 md:py-16 lg:grid-cols-2 lg:gap-20 lg:p-24 lg:py-32 xl:gap-64 xl:p-32"
     >
       <div className="flex flex-col items-end">
         <div className="flex flex-col gap-4">
@@ -13,7 +13,7 @@ function HeroSection() {
             <Image
               src="/assets/arrow.png"
               alt="arrow"
-              className="animate-arrow absolute -right-16 -top-8 hidden w-16 md:w-20 lg:block"
+              className="absolute -right-16 -top-8 hidden w-16 animate-arrow md:w-20 lg:block"
               width={100}
               height={100}
             />
