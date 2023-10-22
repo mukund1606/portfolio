@@ -1,10 +1,14 @@
 "use client";
-import { Link } from "@nextui-org/react";
-import { usePathname } from "next/navigation";
-import { navData } from "./nav-data";
-import { cn } from "@/lib/utils";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+
+import { cn } from "@/lib/utils";
+
+import { navData } from "./nav-data";
 
 function NavBar() {
   const pathname = usePathname();
@@ -51,7 +55,7 @@ function NavBar() {
               <Link
                 href={item.href}
                 className={cn(
-                  "w-fit text-gray-500 transition-all hover:rotate-[360deg] hover:text-gray-900",
+                  "inline-flex w-fit items-center text-medium text-gray-500 no-underline outline-none duration-700 ease-in-out hover:rotate-[360deg] hover:text-gray-900 hover:opacity-80",
                   pathname === item.href && "text-gray-950",
                 )}
               >
